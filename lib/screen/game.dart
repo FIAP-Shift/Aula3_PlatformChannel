@@ -81,11 +81,13 @@ class _GameState extends State<Game> {
         allowFontScaling: false);
 
     return Scaffold(
-      body: Stack(
-        children: [
-          buildFirstStack(),
-          buildSecondStack()
-        ],
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            buildFirstStack(),
+            buildSecondStack()
+          ],
+        ),
       ),
     );
   }
